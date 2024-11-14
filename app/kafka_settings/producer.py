@@ -14,7 +14,7 @@ def produce(topic: str, key, value):
     try:
         producer.send(
             topic=topic,
-            key=key,
+            key=key.encode('utf-8'),
             value=value
         )
         producer.flush()
