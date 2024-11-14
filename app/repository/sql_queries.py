@@ -1,8 +1,7 @@
 import pandas as pd
-from pandas import DataFrame
 from app.db.models.email import Email
 from app.db.postgre_darabase import session_maker
-import logging
+import re
 
 
 def the_full_content_of_an_object_by_email(email_to_get):
@@ -38,3 +37,24 @@ def the_full_content_of_an_object_by_email(email_to_get):
         result["sentences_not_suspicious"] = [sentence.sentence for sentence in email_info.sentences_not_suspicious]
 
         return result
+
+
+def most_common_word_in_suspicious_messages_by_email(email_to_get):
+    with session_maker() as session:
+        email_info = session.query(Email).filter(Email.email == email_to_get).first()
+
+        if not email_info:
+            return None
+
+        all_bad_sentences = [sentence.sentence for sentence in email_info.sentences_hostage]
+        all_bad_sentences += [sentence.sentence for sentence in email_info.sentences_explos]
+
+        combined_text = " ".join(all_bad_sentences).lower()
+        words = re.findall(r'\b\w+\b', combined_text)
+
+        if not words:
+            return None
+
+        word_counts = pd.Series(words).value_counts()
+
+        return word_counts.idxmax() if not word_counts.empty else None
