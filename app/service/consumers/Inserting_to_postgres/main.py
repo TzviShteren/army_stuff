@@ -1,21 +1,16 @@
 import flask
-from faker.proxy import Faker
 from app.kafka_settings.consumer import consume
-from dotenv import load_dotenv
 import os
-
+from dotenv import load_dotenv
+from app.service.consumers.Inserting_to_postgres.repository.insert_data import insert_data
 load_dotenv(verbose=True)
 
-fake = Faker()
 app = flask.Flask(__name__)
-
-
-def test(data):
-    print(data)
 
 
 if __name__ == '__main__':
     consume(
         topic=os.environ['GET_DATA_TOPIC'],
-        function=test
+        function=insert_data
     )
+    app.run()

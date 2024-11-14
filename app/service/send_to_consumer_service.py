@@ -27,8 +27,8 @@ def send_to_consumer_service(messages):
             value=rearranged_messages
         )
 
-    if check_word_in_list("explos", messages):
-        rearranged_messages = move_sentence_with_word_to_front("explos", messages)
+    if check_word_in_list("explosive", messages):
+        rearranged_messages = move_sentence_with_word_to_front("explosive", messages)
         produce(
             topic=os.environ['MESSAGES_EXPLOSIVE_TOPIC'],
             key="explos",

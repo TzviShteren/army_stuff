@@ -1,0 +1,137 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:45] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=2 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:47] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:49] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:51] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:53] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-2 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:55] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:57] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-2 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:22:59] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:23:01] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-1 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:23:04] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:23:06] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:11] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-2 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-1 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:13] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:15] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:17] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:19] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-1 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:21] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:23] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-2 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:26] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:28] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:30] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:32] "[32mPOST /api/email HTTP/1.1[0m" 308 -
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.6.0
+INFO:kafka.conn:Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=1 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+INFO:werkzeug:127.0.0.1 - - [14/Nov/2024 15:28:34] "[35m[1mPOST /api/email/ HTTP/1.1[0m" 201 -
