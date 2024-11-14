@@ -10,11 +10,12 @@ receiving_content_bp = Blueprint('receiving_content', __name__)
 def search_by_email():
     try:
         email = request.json
+        
         if not email:
             return jsonify({"error": "No email provided"}), 400
 
         res = the_full_content_of_an_object_by_email(email['email'])
-        logging.info("test 4")
+
         return jsonify(res), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
