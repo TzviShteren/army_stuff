@@ -1,5 +1,4 @@
 import os
-from ensurepip import bootstrap
 from dotenv import load_dotenv
 from kafka import KafkaAdminClient
 from kafka.admin import NewTopic

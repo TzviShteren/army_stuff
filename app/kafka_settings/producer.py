@@ -9,10 +9,14 @@ load_dotenv(verbose=True)
 def produce(topic: str, key, value):
     producer = KafkaProducer(
         bootstrap_servers=os.environ['BOOTSTRAP_SERVERS'],
-        value_serializer=lambda v: json.dumps(v).encode()
+        value_serializer=lambda v: json.dumps(v).encode('utf-8'),
     )
-    producer.send(
-        topic=topic,
-        key=key.encode('utf-8'),
-        value=value
-    )
+    try:
+        producer.send(
+            topic=topic,
+            key=key,
+            value=value
+        )
+        producer.flush()
+    except Exception as e:
+        print(e)

@@ -1,6 +1,5 @@
 import json
 import os
-from ensurepip import bootstrap
 from types import FunctionType
 from dotenv import load_dotenv
 from kafka import KafkaConsumer
@@ -16,4 +15,4 @@ def consume(topic: str, function: FunctionType, mode='latest'):
         auto_offset_reset=mode
     )
     for message in consumer:
-        function(message)
+        function(message.value)
