@@ -3,9 +3,12 @@ import os
 from app.kafka_settings.producer import produce
 from dotenv import load_dotenv
 from app.service.send_to_consumer_service import send_to_consumer_service
+import logging
 
 load_dotenv(verbose=True)
 app = Flask(__name__)
+
+logging.basicConfig(filename='db_logs.log', level=logging.INFO)
 
 NEW_MEMBER_TOPIC = os.environ['GET_ALL_DATA_TO_MONGO_TOPIC']
 
