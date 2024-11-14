@@ -11,7 +11,7 @@ class Email(Base):
     email = Column(String, nullable=False, unique=True)
     username = Column(String, nullable=False)
     ip_address = Column(String, nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(String, default=datetime.utcnow)
 
     location = relationship("Location", back_populates="email", uselist=False)
     device_info = relationship("DeviceInfo", back_populates="email", uselist=False)

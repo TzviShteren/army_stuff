@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 logging.basicConfig(filename='db_logs.log', level=logging.INFO)
 
-NEW_MEMBER_TOPIC = os.environ['GET_ALL_DATA_TO_MONGO_TOPIC']
+NEW_MEMBER_TOPIC = os.environ['GET_DATA_TOPIC']
 
 
 # get the data from enosh
