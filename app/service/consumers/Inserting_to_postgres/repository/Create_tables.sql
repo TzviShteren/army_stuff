@@ -31,7 +31,7 @@ CREATE TABLE device_info (
 -- Create table for 'sentences_hostage'
 CREATE TABLE sentences_hostage (
     id SERIAL PRIMARY KEY,
-    word VARCHAR NOT NULL,
+    sentence VARCHAR NOT NULL,
     email_id INTEGER NOT NULL,
     FOREIGN KEY (email_id) REFERENCES email (id) ON DELETE CASCADE
 );
@@ -39,7 +39,7 @@ CREATE TABLE sentences_hostage (
 -- Create table for 'sentences_explos'
 CREATE TABLE sentences_explos (
     id SERIAL PRIMARY KEY,
-    word VARCHAR NOT NULL,
+    sentence VARCHAR NOT NULL,
     email_id INTEGER NOT NULL,
     FOREIGN KEY (email_id) REFERENCES email (id) ON DELETE CASCADE
 );
@@ -47,7 +47,7 @@ CREATE TABLE sentences_explos (
 -- Create table for 'sentences_not_suspicious'
 CREATE TABLE sentences_not_suspicious (
     id SERIAL PRIMARY KEY,
-    word VARCHAR NOT NULL,
+    sentence VARCHAR NOT NULL,
     email_id INTEGER NOT NULL,
     FOREIGN KEY (email_id) REFERENCES email (id) ON DELETE CASCADE
 );

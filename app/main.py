@@ -4,6 +4,7 @@ from app.kafka_settings.producer import produce
 from dotenv import load_dotenv
 from app.service.send_to_consumer_service import send_to_consumer_service
 import logging
+from app.routes.receiving_content_route import receiving_content_bp
 
 load_dotenv(verbose=True)
 app = Flask(__name__)
@@ -35,6 +36,8 @@ def all_messages():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
+app.register_blueprint(receiving_content_bp, url_prefix="/receiving_content")
 
 if __name__ == '__main__':
     app.run()

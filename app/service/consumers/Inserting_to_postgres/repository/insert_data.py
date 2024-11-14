@@ -5,7 +5,6 @@ from app.db.postgre_darabase import session_maker
 def insert_data(data):
     with session_maker() as session:
         try:
-            # Insert Email
             email_entry = Email(
                 email=data['email'],
                 username=data['username'],
@@ -39,18 +38,20 @@ def insert_data(data):
 
             sentences = data.get('sentences', [])
             for sentence in sentences:
-                if sentence in "hostage":
+                if "hostage" in sentence.lower():
                     sentence_entry = SentencesHostage(
                         sentence=sentence,
                         email_id=email_entry.id
                     )
                     session.add(sentence_entry)
-                elif sentence in "explosive":
+
+                elif "explosive" in sentence.lower():
                     sentence_entry = SentencesExplos(
                         sentence=sentence,
                         email_id=email_entry.id
                     )
                     session.add(sentence_entry)
+
                 else:
                     sentence_entry = SentencesNotSuspicious(
                         sentence=sentence,
